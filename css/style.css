@@ -1,0 +1,57 @@
+html,
+body {
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  color: #eee;
+}
+
+.container-fluid {
+  max-width: 1140px;
+}
+
+.row {
+  margin: 1.5em -15px;
+}
+
+header h1 {
+  font-size: 3.25em;
+  margin-top: 1.75em;
+}
+
+header h4 {
+  font-size: 1.75em;
+  margin-top: 1.75em;
+  margin-left: 1em;
+}
+
+.navbar {
+  background-color: #eee;
+  position: relative;
+  z-index: 999;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.nav-link {
+  color: #111;
+  font-size: 1.15em;
+}
+
+.nav-link:hover {
+  border-bottom: 1.5px solid #111;
+  color: #111;
+}

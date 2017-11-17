@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden !important;
+}
+
 html,
 body {
   background-color: #000;
@@ -5,6 +9,12 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+  z-index: 1;
+}
+
+::selection {
+  background-color: #fff;
+  color: #000;
 }
 
 h1,
@@ -36,22 +46,221 @@ header h4 {
   margin-left: 1em;
 }
 
+/*     -----    HEADER MEDIA QUERIES     -----     */
+
+@media (max-width: 767px) {
+  #logo {
+    margin: 0 auto;
+    width: 343px;
+  }
+
+  header h1, header h4 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.10em;
+    margin-top: 1em;
+  }
+
+  header h4 {
+    font-size: 1.35em;
+  }
+}
+
+@media (min-width: 850px) {
+  header h1 {
+    font-size: 2.20em;
+  }
+
+  header h4 {
+    font-size: 1.45em;
+  }
+}
+
+@media (min-width: 970px) {
+  header h1 {
+    font-size: 2.50em;
+  }
+
+  header h4 {
+    font-size: 1.65em;
+  }
+}
+
+@media (min-width: 1050px) {
+  header h1 {
+    font-size: 3em;
+  }
+
+  header h4 {
+    font-size: 1.70em;
+  }
+}
+
+@media (min-width: 1128px) {
+  header h1 {
+    font-size: 3.25em;
+    margin-top: 1.55em;
+  }
+
+  header h4 {
+    font-size: 1.75em;
+  }
+}
+
+nav {
+  z-index: 9999 !important;
+}
+
 .navbar {
   background-color: #eee;
-  position: relative;
-  z-index: 999;
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav > li {
+    width: 100%;
+  }
 }
 
 .navbar-brand {
   padding: 0;
 }
 
-.nav-link {
+.navbar-light .navbar-nav .nav-link {
   color: #111;
   font-size: 1.15em;
 }
 
 .nav-link:hover {
-  border-bottom: 1.5px solid #111;
+  border-bottom: 1px solid #111;
+  color: #111;
+}
+
+#philosophy h1 {
+  font-size: 5em;
+  margin-top: 1.5em;
+  text-align: center;
+  width: 100%;
+}
+
+#philosophy p {
+  font-size: 1.05em;
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+#philosophy p span {
+  color: #e2b96f;
+  font-size: 1.20em;
+}
+
+#philosophy-images p {
+  margin: 1em 0;
+  padding: 1em;
+}
+
+#programs h2 {
+  font-size: 2.5em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+#programs p {
+}
+
+#about h2 {
+  font-size: 2.5em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+#about p {
+  font-size: 1.05em;
+  margin: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+#contact p {
+  font-size: 1.05em;
+  margin: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+
+#contact i {
+  color: #eee;
+}
+
+#contact i:hover {
+  color: #e2b96f;
+}
+
+#contact .icons {
+  margin-top: 5em;
+}
+
+#contact form {
+  border: 10px solid #e2b96f;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+  padding: 50px;
+}
+
+#contact label {
+  color: #e2b96f;
+}
+
+#contact input {
+  width: 100%;
+}
+
+#contact textarea {
+  width: 100%;
+}
+
+#submit:hover {
+  background-color: #e2b96f;
+}
+
+footer {
+  background-color: #eee;
+  height: 500px;
+  padding-top: 1.5em;
+}
+
+footer img {
+  padding-bottom: 1.5em;
+}
+
+footer p {
   color: #111;
 }

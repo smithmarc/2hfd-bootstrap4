@@ -12,7 +12,7 @@
     <link rel="icon" href="assets/img/favicon.ico">
 
     <!-- FontAwesome (Icons) -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
@@ -21,7 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
 
     <!-- CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -31,7 +32,7 @@
 
     <header class="container-fluid">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" id="logo">
           <a href="index.html">
             <img src="assets/img/logo_white.png" class="img-fluid">
           </a>
@@ -43,34 +44,78 @@
       </div>
     </header>
 
-    <nav class="navbar justify-content-center" id="sticker">
-      <ul class="nav">
-        <li class="nav-item">
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="sticker">
+      <!-- Place the navbar-brand 'a' content here -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav">
           <a class="navbar-brand" href="#">
             <img src="assets/img/logo_white.png" alt="" width="48">
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Philosophy</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Our Programs
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Junior Development Program</a>
-            <a class="dropdown-item" href="#">Elite Development Program</a>
-            <a class="dropdown-item" href="#">1-on-1 Sessions</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#philosophy">Philosophy <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://www.2hfd.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Our Programs
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#tafe-program">North Metropolitan Tafe Program</a>
+              <a class="dropdown-item" href="#elite-program">Elite Development Program</a>
+              <a class="dropdown-item" href="#junior-program">Junior Development Program</a>
+              <a class="dropdown-item" href="#one-on-one-sessions">1-on-1 Sessions</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+
+    <!--<nav class="navbar justify-content-center navbar-light" id="sticker">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/logo_white.png" alt="" width="48">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#philosophy">Philosophy</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://www.2hfd.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Our Programs
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#tafe-program">North Metropolitan Tafe Program</a>
+              <a class="dropdown-item" href="#elite-program">Elite Development Program</a>
+              <a class="dropdown-item" href="#junior-program">Junior Development Program</a>
+              <a class="dropdown-item" href="#one-on-one-sessions">1-on-1 Sessions</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>-->
 
     <section class="main-content container-fluid">
       <div class="row">
@@ -78,67 +123,223 @@
           <iframe src="https://player.vimeo.com/video/226257334?loop=1&color=e2b96f&title=0&byline=0&portrait=0" frameborder="0" wmode="transparent" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
-      <div class="row">
-        <br>
-        <p>I just need some space.. I'm testing something.</p>
-        <br>
-      </div>
+      <div class="row" id="philosophy">
+        <h1>We are 2Hfd</h1>
+        <div class="col"></div>
+        <div class="col-sm-6">
+          <p>
+            <span>2 Halfs Football Development</span> are based in Joondalup,
+            Western Australia. The company is a family business established in
+            2016 and a lot of planning has gone into this exciting new venture.
+            We are surrounded by some of WA's best football clubs which allows
+            us to work side by side to develop their individual elite players.
+          </p>
+          <p>
+            Our aim as sports scientists, with a strong background in football,
+            is to create the professional environment required to <span>improve
+            ones game.</span> We have the intention to offer opportunities to
+            <span>enhance physiological, technical, tactical and psychological
+            skills</span> via the implementation of leading sports science
+            techniques and methodologies, as well as first hand quality
+            football coaching expertise. 2Hfd utilise the best equipment for
+            the application of measurable, meaningful, and evidentially
+            research proven techniques common to this sporting domain to
+            benefit the performance of our athletes.
+          </p>
+        </div>
+        <div class="col"></div>
+        <div class="row" id="philosophy-images">
+          <div class="col-sm-4">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+            <p>Our indoor and outdoor facilities are the finest in Joondalup.</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+            <p>Discover our programs.</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+            <p>Read testimonials from those we've coached.</p>
+          </div>
+        </div>
+      </div> <!-- /philosophy -->
+
+      <div class="row" id="programs">
+        <div class="row" id="tafe-program">
+          <h2>North Metropolitan Tafe Program</h2>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            <p>
+              A first-of-its-kind opportunity in Perth. Starting 2018, students
+              studying in year 12 have the chance to further their game with
+              2Hfd and gain a cert IV in the process.
+            </p>
+          </div>
+          <div class="col-sm-5">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+        <div class="row" id="elite-program">
+          <h2>Elite Development Program</h2>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+          </div>
+          <div class="col-sm-5">
+            <p>
+              This is where we could introduce the Elite Development Program
+              and show any relevant information.
+            </p>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+        <div class="row" id="junior-program">
+          <h2>Junior Development Program</h2>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            <p>
+              Introduce the Junior Development Program here and any relevant
+              information.
+            </p>
+          </div>
+          <div class="col-sm-5">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+        <div class="row" id="one-on-one-sessions">
+          <h2>1-on-1 Sessions</h2>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+          </div>
+          <div class="col-sm-5">
+            <p>
+              Looking for something more? We are proud to offer one-on-one and
+              two-on-one specialised sessions with our professional coaches.
+            </p>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div> <!-- /programs -->
+
+      <div class="row" id="about">
+        <h2>About Us</h2>
+        <div class="col"></div>
+        <div class="col-sm-6">
+          <p>
+            Sports specific training and testing, with the integration of
+            qualitative video-based feedback, will allow us to monitor our
+            players and athletes from day one on performance parameters, load,
+            muscle soreness and skill improvements.
+            <br><br>
+            Overall, here at 2 Halfs Football Development, we strive to develop
+            our athletes to see growth, maturation, and to guide them down
+            successful future pathways.
+          </p>
+          <img src="assets/img/highperformancecentre.png" class="img-fluid">
+        </div>
+        <div class="col"></div>
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+            <p>Shane</p>
+            <p>Bio..</p>
+          </div>
+          <div class="col-sm-3">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+            <p>Dean</p>
+            <p>Bio..</p>
+          </div>
+          <div class="col-sm-3">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+            <p>Keiran</p>
+            <p>Bio..</p>
+          </div>
+          <div class="col-sm-3">
+            <img src="assets/img/highperformancecentre.png" class="img-fluid">
+            <p>Jason</p>
+            <p>Bio..</p>
+          </div>
+        </div>
+      </div> <!-- /about -->
+
+      <div class="row" id="contact">
+        <h2>Contact</h2>
+        <div class="col"></div>
+        <div class="col-sm-4">
+          <br><br><br><br><br>
+          <p>
+            Get in touch with us through this form or through any of our
+            social media channels to start improving yourself today.
+          </p>
+          <div class="row icons">
+            <div class="col">
+              <a href="https://www.facebook.com/2HalfsFootballDevelopment">
+                <i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col">
+              <a href="https://www.instagram.com/team_2Hfd/">
+                <i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col">
+              <a href="https://twitter.com/team2Hfd">
+                <i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+        <div class="col-sm-6">
+          <form id="contactform" action="mailform.php" method="POST" onSubmit="return validate.check(this)">
+            <label for="Full_Name" class="required">Name:</label>
+            <input name="Full_Name" type="text" id="Full_Name">
+            <br>
+            <label for="Age" class="not-required">Age:</label>
+            <input name="Age" type="text" id="Age">
+            <br>
+            <label for="Club" class="not-required">Club:</label>
+            <input name="Club" type="text" id="Club">
+            <br>
+            <label for="Email_Address" class="required">Email:</label>
+            <input name="Email_Address" type="email" id="Email_Address">
+            <br>
+            <label for="Telephone_Number" class="not-required">Phone:</label>
+            <input type="text" name="Telephone_Number" id="Telephone_Number">
+            <label for="Your_Message" class="required">Your Message:</label>
+            <textarea name="Your_Message" id="Your_Message" rows="5" placeholder="Ask us anything!"></textarea>
+            <br>
+            <input value="Submit" type="submit" id="submit">
+          </form>
+        </div>
+      </div> <!-- /contact -->
+
     </section>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <img src="assets/img/logo_white.png" class="img-fluid">
+          </div>
+          <div class="col-sm-10"></div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Home</p>
+          </div>
+          <div class="col">
+            <p>LightWidget for Instagram</p>
+          </div>
+          <div class="col">
+            <p>Sponsors links and icons</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
